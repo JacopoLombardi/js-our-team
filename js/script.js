@@ -42,7 +42,7 @@ for(people of team){
 
    output.innerHTML += `
    
-   <div class="col-3  card  text-center  rounded-0  mx-1  my-5  p-0">
+   <div class="col-3  card  text-center  rounded-0  mx-3  my-5  p-0">
       <img src="${people.immagine}" alt="...">
       <div class="card-body">
          <h5 class="card-title">${people.nome}</h5>
