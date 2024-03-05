@@ -1,48 +1,49 @@
-
+// output cards
 const output = document.querySelector('._output');
+
 
 // array con oggetti all'interno
 const team = [
    {
       nome: 'Wayne Barnett',
       ruolo: 'Founder & CEO',
-      immagine: ''
+      immagine: 'img/wayne-barnett-founder-ceo.jpg'
    },
    {
       nome: 'Angela Caroll',
       ruolo: 'Chief Editor',
-      immagine: ''
+      immagine: 'img/angela-caroll-chief-editor.jpg'
    },
    {
       nome: 'Walter Gordon',
       ruolo: 'Office Manager',
-      immagine: ''
+      immagine: 'img/walter-gordon-office-manager.jpg'
    },
    {
       nome: 'Angela Lopez',
       ruolo: 'Social Media Manager',
-      immagine: ''
+      immagine: 'img/angela-lopez-social-media-manager.jpg'
    },
    {
       nome: 'Scott Estrada',
       ruolo: 'Developer',
-      immagine: ''
+      immagine: 'img/scott-estrada-developer.jpg'
    },
    {
       nome: 'Barbara Ramos',
       ruolo: 'Graphic Designer',
-      immagine: ''
+      immagine: 'img/barbara-ramos-graphic-designer.jpg'
    },
 ];
 
 
-
+// ciclo for of per ciclare l'array con all'interno gli oggetti con le loro proprietà
 for(people of team){
 
    output.innerHTML += `
    
-   <div class="col-3  card  text-center  rounded-0  mx-1  mt-5  p-0">
-      <img src="img/wayne-barnett-founder-ceo.jpg" alt="...">
+   <div class="col-3  card  text-center  rounded-0  mx-1  my-5  p-0">
+      <img src="${people.immagine}" alt="...">
       <div class="card-body">
          <h5 class="card-title">${people.nome}</h5>
          <p class="card-text">${people.ruolo}</p>
@@ -54,6 +55,4 @@ for(people of team){
    console.log(people)
 
 }
-
-
 
